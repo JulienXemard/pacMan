@@ -1,5 +1,7 @@
 //? DOM events fires once initial HTML = loaded & Parsed
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
+  // ------------------------------ DOM elements ------------------------------ //
+  const grid = document.querySelector('.grid')
 
   // gameBoard creation
   // 0 = blank | 1 = wall
@@ -26,11 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
   ]
 
-  const gameBoard = []
-  const gridWidth = 18
-  const grid = document.querySelector('.grid')
+  const cells = []
+  const cellWidth = 18
+  const gridCount = cellWidth * cellWidth 
   let isPlaying = false
   let pelletCount = 0
 
+  function gameGrid(startingPosition) {
+    for (let i = 0; i <= gridCount; i++) {
+      const cell = document.createElement('div')
+      grid.appendChild(cell)
+      cells.push(cell)
+      console.log(cells)
+    }
+  }
+  gameGrid()
 
-})
+
+}
+document.addEventListener('DOMContentLoaded', init)
