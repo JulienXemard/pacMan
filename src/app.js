@@ -7,7 +7,7 @@ function init() {
   // ------------------------------ Variables ------------------------------ // 
   // gameBoard creation
   // 0 = blank | 1 = wall
-  // 2 = pellet | 3 = home
+  // 2 = pellet | 3 = safe
 
   const firsLevel = [
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
@@ -37,11 +37,12 @@ function init() {
   function gameGrid(startingPosition) {
     for (let i = 0; i < gridCount; i++) {
       const cell = document.createElement('div')
+      cell.classList.add('cell')
       grid.appendChild(cell)
       cells.push(cell)
-      console.log(cells)
     }
   }
+  console.log(cells)
   gameGrid()
 
 

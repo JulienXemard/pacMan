@@ -14,7 +14,7 @@ body {
 }
 
 /* Game Grid */
-.grid {
+div.grid {
   display: flex;
   flex-direction: wrap;
   width: 500px;
@@ -23,6 +23,6 @@ body {
 }
 
 .cell {
-  width: 5.5555555556%;
-  height: 5.5555555556%;
+  width: calc(100% / 18);
+  height: calc(100% / 18)
 }
