@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game Grid */
+.grid {
+  display: flex;
+  flex-direction: wrap;
+  width: 500px;
+  height: 500px;
+}

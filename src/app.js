@@ -1,8 +1,10 @@
 //? DOM events fires once initial HTML = loaded & Parsed
 function init() {
   // ------------------------------ DOM elements ------------------------------ //
+  const docBody = document.querySelector('body')
   const grid = document.querySelector('.grid')
 
+  // ------------------------------ Variables ------------------------------ // 
   // gameBoard creation
   // 0 = blank | 1 = wall
   // 2 = pellet | 3 = home
@@ -31,11 +33,9 @@ function init() {
   const cells = []
   const cellWidth = 18
   const gridCount = cellWidth * cellWidth 
-  let isPlaying = false
-  let pelletCount = 0
 
   function gameGrid(startingPosition) {
-    for (let i = 0; i <= gridCount; i++) {
+    for (let i = 0; i < gridCount; i++) {
       const cell = document.createElement('div')
       grid.appendChild(cell)
       cells.push(cell)
