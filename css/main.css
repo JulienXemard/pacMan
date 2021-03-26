@@ -4,6 +4,7 @@
 
 body {
   background: black;
+  color: white;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -18,4 +19,10 @@ body {
   flex-direction: wrap;
   width: 500px;
   height: 500px;
+  color: white;
+}
+
+.cell {
+  width: 5.5555555556%;
+  height: 5.5555555556%;
 }
