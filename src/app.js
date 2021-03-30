@@ -30,16 +30,19 @@ function init() {
     [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
   ]
 
-  const cells = []
-  const cellWidth = 18
-  const gridCount = cellWidth * cellWidth 
+  const gameBoard = []
+  const gridCount = 18
 
-  function gameGrid(startingPosition) {
-    for (let i = 0; i < gridCount; i++) {
-      const cell = document.createElement('div')
-      cell.classList.add('cell')
-      grid.appendChild(cell)
-      cells.push(cell)
+  function gameGrid() {
+    for (let y = 0; x < gridCount; i++) {
+      const rows = []
+      for (let x = 0; i < gridCount; i++) {
+        const cell = document.createElement('div')
+        cell.classList.add('cell')
+        grid.appendChild(cell)
+        rows.push(cell)
+      }
+      gameBoard.push(rows)
     }
   }
   console.log(cells)

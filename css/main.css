@@ -16,13 +16,12 @@ body {
 /* Game Grid */
 div.grid {
   display: flex;
-  flex-direction: wrap;
+  flex-wrap: wrap;
   width: 500px;
   height: 500px;
-  color: white;
 }
 
 .cell {
   width: calc(100% / 18);
-  height: calc(100% / 18)
+  height: calc(100% / 18);
 }
